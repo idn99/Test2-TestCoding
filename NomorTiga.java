@@ -16,13 +16,21 @@ class NomorTiga{
 
         // hitung bruto
         hasilBruto = gaji + tunjanganSuamiIstri + tunjanganAnak;
-        System.out.println("PENGHASILAN BRUTO PERBULAN   :   Rp. "+ def.format(hasilBruto));
-
         // hitung iuran pensiun
         iuranPensiun = gaji * 0.04;
 
         // hitung netto
         hasilNetto = hasilBruto - iuranPensiun;
-        System.out.println("PENGHASILAN NETTO PERBULAN   :   Rp. "+ def.format(hasilNetto));
+
+        //output
+        System.out.println("PENGHASILAN POKOK PERBULAN       :   Rp. "+ def.format(gaji));
+        System.out.println("TUNJANGAN SUAMI ISTRI PERBULAN   :   Rp. "+ def.format(tunjanganSuamiIstri));
+        System.out.println("TUNJANGAN ANAK PERBULAN          :   Rp. "+ def.format(tunjanganAnak));
+        System.out.println("__________________________________________________________ + ");
+        System.out.println("PENGHASILAN BRUTO PERBULAN       :   Rp. "+ def.format(hasilBruto));
+        System.out.println();
+        System.out.println("IURAN PENSIUN PERBULAN           :   Rp. "+ def.format(iuranPensiun));
+        System.out.println("__________________________________________________________ - ");
+        System.out.println("PENGHASILAN NETTO PERBULAN       :   Rp. "+ def.format(hasilNetto));
     }
 }
